@@ -2,7 +2,7 @@
 
 ### Main README.md
 
-```markdown
+
 # LeetCode Journey
 
 ## 📊 Progress Stats
@@ -36,4 +36,4 @@
 - [Study Notes](./notes/)
 - [Common Patterns](./notes/patterns.md)
 - [Complexity Cheatsheet](./notes/time-complexity-guide.md)
-```
+
