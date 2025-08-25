@@ -1,8 +1,3 @@
-## Repository Features to Include
-
-### Main README.md
-
-
 # LeetCode Journey
 
 ## 📊 Progress Stats
@@ -21,9 +16,9 @@
 
 ### By Difficulty
 
-- [Easy Problems](./problems/easy/)
-- [Medium Problems](./problems/medium/)
-- [Hard Problems](./problems/hard/)
+- [Easy Problems](./easy/)
+- [Medium Problems](./medium/)
+- [Hard Problems](./hard/)
 
 ## 🧠 Key Patterns Learned
 
