@@ -20,13 +20,13 @@ Track the minimum price so far and compute profit on each day.
 ### Initial Analysis
 
 - What is the problem asking?
-  \*\*Find the maxProfit that can be made after the initial buy price
+  - Find the maxProfit that can be made after the initial buy price
 - What are the constraints?
-  **We can't sell before we buy
-  **prices must be positive
-  \*\*if we can't achieve a max profit return 0
+  - We can't sell before we buy
+  - prices must be positive
+  - if we can't achieve a max profit return 0
 - What's my first intuition?
-  Go through each day to find the max profit we can obtain
+  - Go through each day to find the max profit we can obtain
 
 ### Approach Exploration
 
@@ -38,11 +38,11 @@ Track the minimum price so far and compute profit on each day.
 
 2. **Optimized Approach**
    - Key insight that led to optimization
-     Track minPrice (smallest price so far) and maxProfit while iterating.
-     For each price:
-     Update minPrice if the current price is lower.
-     Compute profit = currentPrice - minPrice.
-     Update maxProfit if profit is larger.
+     - Track minPrice (smallest price so far) and maxProfit while iterating.
+     - For each price:
+      - Update minPrice if the current price is lower.
+      - Compute profit = currentPrice - minPrice.
+      - Update maxProfit if profit is larger.
     - Time: O(n)
     - Space: O(1)
 
