@@ -40,9 +40,9 @@ Track the minimum price so far and compute profit on each day.
    - Key insight that led to optimization
      - Track minPrice (smallest price so far) and maxProfit while iterating.
      - For each price:
-      - Update minPrice if the current price is lower.
-      - Compute profit = currentPrice - minPrice.
-      - Update maxProfit if profit is larger.
+         - Update minPrice if the current price is lower.
+         - Compute profit = currentPrice - minPrice.
+         - Update maxProfit if profit is larger.
     - Time: O(n)
     - Space: O(1)
 
