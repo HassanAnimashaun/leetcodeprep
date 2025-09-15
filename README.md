@@ -2,7 +2,7 @@
 
 ## 📊 Progress Stats
 
-- **Total Problems Solved:** 45
+- **Total Problems Solved:**
 - **Easy:** 4 ✅
 - **Medium:** 
 - **Hard:** 
