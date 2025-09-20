@@ -2,10 +2,10 @@
 
 ## 📊 Progress Stats
 
-- **Total Problems Solved:** 45
-- **Easy:** 20 ✅
-- **Medium:** 20 ✅
-- **Hard:** 5 ✅
+- **Total Problems Solved:**
+- **Easy:** 4 ✅
+- **Medium:** 
+- **Hard:** 
 
 ## 🎯 Current Focus
 
