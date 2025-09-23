@@ -4,7 +4,32 @@
  * @return {number}
  */
 var maximumSubarraySum = function (nums, k) {
-    return nums
-};
+    //init map
+    const seen = {}
+    let sum = 0 
+    let maxSum = 0
 
+    //loop through nums
+    for(let i = 0; i <= nums.length - k; i++){ 
+       seen[nums[i]] = (seen[nums[i]] || 0) + 1
+       sum += nums[i]
+
+       //shrink window
+      if(i >= k){
+        seen[nums[i - k]] -= 1 
+        if(seen[nums[i - k]] === 0){
+             delete seen[nums[i - k]]
+        sum -= nums[i - k]
+        }
+       }
+
+       //update maxSum if window is valid 
+       if(Object.keys(seen).length === k){
+        maxSum = Math.max(maxSum, sum)
+       }
+        
+    }
+    return maxSum
+
+}
 console.log(maximumSubarraySum([1, 5, 4, 2, 9, 9, 9], 3));

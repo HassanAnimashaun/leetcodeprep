@@ -16,9 +16,10 @@ A subarray is a contiguous non-empty sequence of elements within an array.
 **LeetCode Link:** https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/
 
 ## My Thought Process
-- k is the length of each subarray 
-- Each subarray can not have a duplicate number in it 
-- If none meet the conditions then return 0
+ -find maximum subarray sum
+	-subarray must be length of k
+	- return the maximum result of the subarray
+	- subarry must be distinct(no repeating numbers)
 ### Initial Analysis
 
 - What is the problem asking?
@@ -26,7 +27,7 @@ A subarray is a contiguous non-empty sequence of elements within an array.
 - What are the constraints?
     - Can not contain dupes 
 - What's my first intuition?
-    - Using a hashset to keep track of elements inside subarray
+    - Using a hashset to keep to ensure no repeating values
 
 ### Approach Exploration
 
@@ -43,8 +44,8 @@ A subarray is a contiguous non-empty sequence of elements within an array.
     4.After checking all subarrays → return maxSum.
         - If no valid subarrays found → maxSum remains 0 → return 0.
 
-   - Time: O(n * k)
-   - Space: O(n)
+   - Time: O(n * k^2)
+   - Space: O(k)
    - Why this works but isn't optimal
     - Recomputing sum of k elements for every new subarray
     - Checking for dupes of each subarray separately 
