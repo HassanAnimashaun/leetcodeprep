@@ -3,8 +3,8 @@
 ## 📊 Progress Stats
 
 - **Total Problems Solved:**
-- **Easy:** 4 ✅
-- **Medium:** 
+- **Easy:** 5 ✅
+- **Medium:**  1
 - **Hard:** 
 
 ## 🎯 Current Focus
