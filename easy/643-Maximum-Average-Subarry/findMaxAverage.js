@@ -1,29 +1,28 @@
 /**
  * @param {number[]} nums
  * @param {number} k
- * @return {number}          
+ * @return {number}
  */
-var findMaxAverage = function(nums, k) {
+var findMaxAverage = function (nums, k) {
+    //init maxSum 
+    let windowSum = 0;
     
-    //init sum of first k element
-    let sum = 0;
-    for(let i = 0; i < k; i++ ){
-        sum += nums[i];
+    //init window
+    for(let i = 0; i < k; i++){
+        windowSum = nums[i]
     }
 
-    let maxSum = sum;
+    //keep track of maxSum
+    let maxSum = windowSum;
 
-    //start sliding window
-    for(let i = k ; i < nums.length; i++){
-        //removing left adding right
-        sum = sum - nums[i - k] + nums[i] 
-        //updating maxSum
-        maxSum = Math.max(maxSum, sum)
+    //shirk/expand window
+    for(let i = k; i < nums.length; i++){
+        windowSum += nums[i]
+        windowSum -= nums[i - k]
+        maxSum = Math.max(maxSum, windowSum);
     }
 
-    //return max avg
-    return maxSum / k 
+    return maxSum / k;
 };
 
-console.log(findMaxAverage([1,12,-5,-6,50,3], 4)); //Output: 12.75000
-console.log(findMaxAverage([5], 1)); //Output: 5.00000
+console.log(findMaxAverage([1, 12, -5, -6, 50, 3], 4)); // Answer: 12.75

@@ -19,7 +19,6 @@ var maximumSubarraySum = function (nums, k) {
       sum -= nums[i - k];
       seen[nums[i - k]] -= 1;
       if (seen[nums[i - k]] === 0) {
-        x;
         delete seen[nums[i - k]];
       }
     }
